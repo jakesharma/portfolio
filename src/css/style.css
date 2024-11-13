@@ -236,3 +236,22 @@ button .whatsapp-button {
 .ExploreSection {
     background-color: #191B1F;
 }
+
+.not-found {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.not-found h1 {
+    font-size: 3rem;
+    color: #e74c3c;
+}
+
+.not-found p {
+    font-size: 1.2rem;
+    color: #555;
+}

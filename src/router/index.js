@@ -3,6 +3,7 @@ import HomePage from '../views/HomePage.vue';
 import AboutPage from '../views/AboutPage.vue';
 import ProjectsList from '../views/ProjectsList.vue';
 import ContactPage from '../views/ContactPage.vue';
+import NotFound from '@/components/NotFound.vue';
 
 const routes = [
     {
@@ -28,6 +29,11 @@ const routes = [
     {
         path: '/old-home',
         redirect: '/'
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'NotFound',
+        component: NotFound
     }
 ];
 

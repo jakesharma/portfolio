@@ -1,18 +1,15 @@
 <template>
   <div id="app">
-    <!-- Update to use the new multi-word name -->
-    <MainMenu />
+    <MainMenu v-if="!isNotFound" />
 
     <router-view></router-view>
 
-    <!-- Include the updated SectionFooter component -->
-    <Explore_portfolio_link />
-    <SectionFooter />
+    <Explore_portfolio_link v-if="!isNotFound" />
+    <SectionFooter v-if="!isNotFound" />
   </div>
 </template>
 
 <script>
-// Import the renamed component
 import Explore_portfolio_link from './components/explore_button.vue';
 import SectionFooter from './components/footer.vue';
 import MainMenu from './components/header.vue';
@@ -23,6 +20,12 @@ export default {
     SectionFooter,
     MainMenu,
     Explore_portfolio_link,
+  },
+
+  computed: {
+    isNotFound() {
+      return this.$route.name === 'NotFound'
+    }
   }
 };
 </script>
