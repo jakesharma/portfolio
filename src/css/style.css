@@ -58,7 +58,9 @@ header .nav-link.router-link-exact-active {
 
 header .nav-link:hover {
     color: white;
+    
 }
+
 
 /***** End header *****/
 
@@ -85,7 +87,7 @@ header .nav-link:hover {
         linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%),
         linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%),
         linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 30%),
-        linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 15%);
+        linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 30%);
     z-index: 1;
 }
 
@@ -178,6 +180,25 @@ button .whatsapp-button {
     background-color: #1C1E2A;
     border-radius: 10px;
 
+}
+
+.fa-arrow-right {
+    /* margin-left: -80px; */
+    animation: moveLeftToRight 1s linear infinite;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(15%);
+    }
+
+    50% {
+        transform: translateX(-15%);
+    }
+
+    100% {
+        transform: translateX(15%);
+    }
 }
 
 /***** End Section Project card *****/
