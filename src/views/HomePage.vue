@@ -7,7 +7,7 @@
                             Suthar</span><br />Frontend
                         Dev & Web Designer</h2>
                     <p class="personDescription">
-                        I have a BCA and MCA degree, and I focus on frontend development and web design. I know how to
+                        I have completed a BCA (Bachelor of Computer Applications) and an MCA (Master of Computer Applications), and I focus on frontend development and web design. I know how to
                         build
                         websites using various frontend tools, and I also have some experience with backend development,
                         especially with Laravel 11. I enjoy making websites that are easy to use and look great, and I’m

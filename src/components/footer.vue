@@ -6,7 +6,8 @@
             </div>
             <div>
                 <a href="https://github.com/jakesharma" target="_blank" class="text-white">GitHub</a> |
-                <a href="https://www.linkedin.com/in/jai" target="_blank" class="text-white">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/jai-suthar-345bb5270/" target="_blank"
+                    class="text-white">LinkedIn</a>
             </div>
         </div>
     </footer>
