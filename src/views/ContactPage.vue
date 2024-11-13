@@ -18,19 +18,19 @@
                             <p class="mt-5 fs-bold">My other Social Accounts:</p>
                             <div class="d-flex fs-2 ">
                                 <!-- Facebook Icon -->
-                                <a href="#" class="me-2">
+                                <a href="https://www.facebook.com/jaysuthar597" target="_blank" class="me-2">
                                     <i class="fa-brands fa-facebook-f text-white"
                                         style="width: 50px; height: 50px; text-align: center; "></i>
                                 </a>
 
                                 <!-- Instagram Icon -->
-                                <a href="#" class="me-2">
+                                <!-- <a href="#" class="me-2">
                                     <i class="fa-brands fa-instagram text-white"
                                         style="width: 50px; height: 50px; text-align: center;"></i>
-                                </a>
+                                </a> -->
 
                                 <!-- X (Twitter) Icon -->
-                                <a href="#" class="me-2">
+                                <a href="https://x.com/Jakeboy978?t=qOJJuN3esk6M0XlZlNQd8A&s=09" target="_blank" class="me-2">
                                     <i class="fa-brands fa-x-twitter text-white"
                                         style="width: 50px; height: 50px; text-align: center;"></i>
                                 </a>
