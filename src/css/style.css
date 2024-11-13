@@ -11,6 +11,17 @@ html {
     color: #fff;
 }
 
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #232323;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
 .top-left-light {
     background:
         radial-gradient(circle at top left, #ffffff7f 0%, #000000 30%);
@@ -48,6 +59,7 @@ header .nav-link.router-link-exact-active {
 header .nav-link:hover {
     color: white;
 }
+
 /***** End header *****/
 
 
@@ -132,6 +144,7 @@ button .whatsapp-button {
         /* Adjust button padding further for tiny screens */
     }
 }
+
 /***** End banner  *****/
 
 
@@ -150,6 +163,7 @@ button .whatsapp-button {
     text-decoration: underline;
     text-underline-offset: 8px;
 }
+
 /***** End footer *****/
 
 
@@ -165,6 +179,7 @@ button .whatsapp-button {
     border-radius: 10px;
 
 }
+
 /***** End Section Project card *****/
 
 /***** contact us *****/
@@ -183,6 +198,7 @@ button .whatsapp-button {
     color: white;
     border: none;
 }
+
 /***** End contact us *****/
 
 .ExploreSection {
