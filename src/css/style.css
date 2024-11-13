@@ -98,7 +98,7 @@ header .nav-link:hover {
             rgba(0, 0, 0, 0) 30%),
         radial-gradient(circle at center,
             rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, 1) 80%);
+            rgb(0, 0, 0) 100%);
     z-index: 1;
 }
 
