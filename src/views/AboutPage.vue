@@ -29,8 +29,7 @@
                         robust and scalable web applications.</li>
 
                     <li class="ms-3 mb-3"><strong>Livewire</strong>: Basic experience with Livewire for CRUD operations,
-                        real-time applications in Laravel,
-                        SPA</li>
+                        real-time applications in Laravel, and SPA.</li>
 
                     <li class="ms-3 mb-3"><strong>Front-end Frameworks</strong>: Proficiency in Bootstrap to design
                         responsive layouts and creating better
