@@ -15,35 +15,35 @@ html {
     font-family: 'Great Vibes', cursive;
     font-size: 1.5em;
     font-weight: bold;
-    color: #232323;
-    padding: 10px;
+    /* color: #232323; */
+    padding-top: 10px;
     border-radius: 10px;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 
 .top-left-light {
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    z-index: 9999;
+    z-index: 9999; */
     background:
-        radial-gradient(circle at top left, #ffffff69 0%, #000000 40%);
+        radial-gradient(circle at top left, #ffffff69 0%, #000000 30%);
     width: 100%;
     height: 600px;
 }
 
 /***** header *****/
-/* header {
+header {
     position: sticky;
     top: 0;
-    z-index: 5;
-    background: #191b1f83;
+    z-index: 9999;
+    /* background: #191b1f83;
 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-} */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+}
 
 header .navbar-brand,
 header .navbar-brand:hover {
@@ -92,7 +92,7 @@ header .nav-link:hover {
     background:
     linear-gradient(to left,
         rgba(0, 0, 0, 1) 20%,
-        rgba(0, 0, 0, 0) 60%),
+        rgba(0, 0, 0, 0) 70%),
     linear-gradient(to top,
         rgba(0, 0, 0, 1) 10%,
         rgba(0, 0, 0, 0) 60%);

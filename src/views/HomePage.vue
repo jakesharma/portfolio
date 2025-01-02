@@ -2,7 +2,7 @@
     <div class="pb-5 banner" style="overflow-x: hidden;">
         <div class="row d-flex justify-content-between align-items-center py-2">
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 order-xxl-first order-xl-first order-lg-first order-md-first order-sm-last order-last " data-aos="fade-left" data-aos-duration="1000">
-                <div class="px-5 left-side-info">
+                <div class="px-5 py-0 left-side-info">
                     <h2 class="">Hey there, I'm <span class="text-warning">Jai Kishan
                             Suthar</span><br />Frontend
                         Dev & Web Designer</h2>
@@ -20,7 +20,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 order-xxl-last order-xl-last order-lg-last order-md-last order-sm-first  order-first " data-aos="fade-right" data-aos-duration="1000">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 order-xxl-last  order-xl-last order-lg-last order-md-last order-sm-first  order-first " data-aos="fade-right" data-aos-duration="1000">
                 <div class="image-container  mx-auto">
                     <img class="img-fluid   gradient-image" src="../assets/image/black_and_white-jai.png" alt="">
 

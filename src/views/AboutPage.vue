@@ -1,6 +1,6 @@
 <template>
     <!-- About Section -->
-    <section id="about" class="w-100 p-5">
+    <section id="about" class="w-100 p-5 ">
         <div class="row">
             <div class="col-12">
                 <h2 class="w-100 border-2 border-bottom">About Me</h2>
@@ -20,22 +20,22 @@
 
         <!-- Skills & Expertise Section -->
         <div class="row mt-4">
-            <div class="col-12 col-12">
+            <div class="col-12">
                 <h3 class=" mb-4">Skills & Expertise</h3>
                 <ol class="list-unstyled skills-list">
-                    <li class="ms-5 mb-3"><strong>HTML5, CSS3, and JavaScript</strong> (Basic knowledge) for creating
+                    <li class="ms-3 mb-3"><strong>HTML5, CSS3, and JavaScript</strong> (Basic knowledge) for creating
                         modern, responsive websites.</li>
-                    <li class="ms-5 mb-3"><strong>PHP and MySQL</strong> for developing dynamic, data-driven web
+                    <li class="ms-3 mb-3"><strong>PHP and MySQL</strong> for developing dynamic, data-driven web
                         applications.</li>
-                    <li class="ms-5 mb-3"><strong>Laravel 11</strong>: Knowledge of this powerful PHP framework, with
+                    <li class="ms-3 mb-3"><strong>Laravel 11</strong>: Knowledge of this powerful PHP framework, with
                         experience in building robust and scalable web applications.</li>
-                    <li class="ms-5 mb-3"><strong>Livewire</strong>: Basic experience with Livewire, enabling real-time
+                    <li class="ms-3 mb-3"><strong>Livewire</strong>: Basic experience with Livewire, enabling real-time
                         interaction without the need for complex JavaScript.</li>
-                    <li class="ms-5 mb-3"><strong>Front-end Frameworks</strong>: Proficiency in Bootstrap, Tailwind CSS,
+                    <li class="ms-3 mb-3"><strong>Front-end Frameworks</strong>: Proficiency in Bootstrap, Tailwind CSS,
                         and other front-end frameworks to design responsive layouts.</li>
-                    <li class="ms-5 mb-3"><strong>Basic Figma & Photoshop</strong>: I use Figma and Photoshop for
+                    <li class="ms-3 mb-3"><strong>Basic Figma & Photoshop</strong>: I use Figma and Photoshop for
                         designing website mockups, wireframes, and optimizing images for the web.</li>
-                    <li class="ms-5 mb-3"><strong>Basic Video Editing</strong>: I have basic experience in video
+                    <li class="ms-3 mb-3"><strong>Basic Video Editing</strong>: I have basic experience in video
                         editing, enabling me to create engaging multimedia content for web applications.</li>
                 </ol>
                 <p class="">In addition to my development skills, I have a strong eye for design. I have worked with
