@@ -1,9 +1,9 @@
 <template>
-    <section class="ExploreSection text-center p-5">
+    <section class="ExploreSection text-center p-5 ">
         <div class="ExploreContent text-center">
             <h2>Explore My Portfolio</h2>
             <p class="mb-5">
-                Delve into a collection of my projects, where creativity meets functionality. Discover how I can add
+                Delve into a collection of my projecs, where creativity meets functionality. Discover how I can add
                 value to your initiatives by browsing through my work. Let's get started on your next project
                 together!
             </p>
