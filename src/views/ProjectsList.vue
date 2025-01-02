@@ -7,7 +7,7 @@
     </div>
 
     <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-4 pt-3 project">
-      <div class="col">
+      <div class="col" data-aos="fade-up"  data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
         <div class="card shadow-sm border-0 text-white">
           <a href="https://jakesharma.github.io/codingclass/" target="_blank" class="w-inline-block" style="">
             <img src="../assets/image/website-screenshot/codingclass.png" class="img-fluid p-3"
@@ -50,7 +50,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-aos="fade-up"  data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
         <div class="card shadow-sm border-0 text-white">
           <a href="https://jakesharma.github.io/ZoomStudio/" target="_blank" class="w-inline-block" style="">
             <img src="../assets/image/website-screenshot/ZoomStudio.png" class="img-fluid p-3"
@@ -93,7 +93,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-aos="fade-up"  data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
         <div class="card shadow-sm border-0 text-white">
           <a href="https://jakesharma.github.io/Web.Resume/" target="_blank" class="w-inline-block" style="">
             <img src="../assets/image/website-screenshot/Web.Resume.png" class="img-fluid p-3"
@@ -136,7 +136,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-aos="fade-up"  data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
         <div class="card shadow-sm border-0 text-white">
           <a href="https://jakesharma.github.io/Coding-Knowledge/" target="_blank" class="w-inline-block" style="">
             <img src="../assets/image/website-screenshot/Coding-Knowledge.png" class="img-fluid p-3"
@@ -179,7 +179,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-aos="fade-up"  data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
         <div class="card shadow-sm border-0 text-white">
           <a href="https://jakesharma.github.io/myportfolio/" target="_blank" class="w-inline-block" style="">
             <img src="../assets/image/website-screenshot/myportfolio.png" class="img-fluid p-3"
@@ -222,7 +222,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-aos="fade-up"  data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
         <div class="card shadow-sm border-0 text-white">
           <a href="https://jakesharma.github.io/circle/" target="_blank" class="w-inline-block" style="">
             <img src="../assets/image/website-screenshot/circle.png" class="img-fluid p-3" style="border-radius: 20px;"
