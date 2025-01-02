@@ -33,26 +33,28 @@ html {
 }
 
 /***** header *****/
-header {
+/* header {
     position: sticky;
     top: 0;
     z-index: 9999;
-    /* background: #191b1f83;
+    background: #191b1f83;
 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
-}
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+} */
 
 header .navbar-brand,
 header .navbar-brand:hover {
     color: white;
+   
 }
 
 header .nav-link {
     color: gray;
     transition: color 1s ease, text-decoration 5s ease;
+
 }
 
 /* Active state */
@@ -64,7 +66,6 @@ header .nav-link.router-link-exact-active {
 
 header .nav-link:hover {
     color: white;
-
 }
 
 
@@ -90,12 +91,12 @@ header .nav-link:hover {
     width: 100%;
     height: 100%;
     background:
-    linear-gradient(to left,
-        rgba(0, 0, 0, 1) 20%,
-        rgba(0, 0, 0, 0) 70%),
-    linear-gradient(to top,
-        rgba(0, 0, 0, 1) 10%,
-        rgba(0, 0, 0, 0) 60%);
+        linear-gradient(to left,
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 0) 70%),
+        linear-gradient(to top,
+            rgba(0, 0, 0, 1) 10%,
+            rgba(0, 0, 0, 0) 60%);
     /* linear-gradient(to right,
         rgba(0, 0, 0, 1) 0%,
         rgba(0, 0, 0, 0) 10%),
