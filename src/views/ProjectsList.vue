@@ -182,11 +182,10 @@
       <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
         <div class="card shadow-sm border-0 text-white">
           <a href="https://jakesharma.github.io/codingclass/" target="_blank" class="w-inline-block" style="">
-            <img src="../assets/image/website-screenshot/codingclass.png" class="img-fluid p-3"
-              style="border-radius: 20px;" alt="project" loading="lazy">
+            <img src="../assets/image/website-screenshot/codingclass.png" class="img-fluid card-img" alt="project" loading="lazy">
           </a>
 
-          <div class=" card-body ">
+          <div class=" card-body overlay">
             <div class="card-2-color px-3 pt-3">
               <h5 class="card-title">
                 <a href="" class="nav-link">
