@@ -270,12 +270,12 @@ button .whatsapp-button {
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    left: -3rem;
+    /* left: -3rem; */
 }
 
 .card-img {
     transition: transform 0.5s ease-in-out;
-    height: 600px;
+    /* height: 600px; */
 }
 
 .card:hover .card-img {
