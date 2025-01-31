@@ -10,7 +10,7 @@
       <div class="project-scroller">
         <div v-for="(project, index) in projects" :key="index" class="project-card" data-aos="fade-up"
           data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-          <div class="card bg-dark shadow-sm border-0 text-white" >
+          <div class="card bg-dark shadow-sm border-0 text-white">
             <a :href="project.link" target="_blank" class="w-inline-block">
               <img :src="project.image" class="img-fluid card-img" alt="project" loading="lazy">
 
@@ -53,44 +53,53 @@ export default {
         {
           title: 'CodingClass',
           link: 'https://jakesharma.github.io/codingclass/',
-          image: require('@/assets/image/website-screenshot/codingclass.png') // Use require
+          image: require('@/assets/image/website-screenshot/codingclass.png')
         },
         {
           title: 'ZoomStudio',
           link: 'https://jakesharma.github.io/ZoomStudio/',
-          image: require('@/assets/image/website-screenshot/ZoomStudio.png') // Use require
+          image: require('@/assets/image/website-screenshot/ZoomStudio.png')
         },
         {
           title: 'Web.Resume',
           link: 'https://jakesharma.github.io/Web.Resume/',
-          image: require('@/assets/image/website-screenshot/Web.Resume.png') // Use require
+          image: require('@/assets/image/website-screenshot/Web.Resume.png')
         },
         {
           title: 'Coding-Knowledge',
           link: 'https://jakesharma.github.io/Coding-Knowledge/',
-          image: require('@/assets/image/website-screenshot/Coding-Knowledge.png') // Use require
+          image: require('@/assets/image/website-screenshot/Coding-Knowledge.png')
         },
         {
           title: 'myportfolio',
           link: 'https://jakesharma.github.io/myportfolio/',
-          image: require('@/assets/image/website-screenshot/myportfolio.png') // Use require
+          image: require('@/assets/image/website-screenshot/myportfolio.png')
         },
         {
           title: 'Circle',
           link: 'https://jakesharma.github.io/circle/',
-          image: require('@/assets/image/website-screenshot/circle.png') // Use require
+          image: require('@/assets/image/website-screenshot/circle.png')
         }
-      ]
-    }
+      ],
+      touchStartX: 0, // Store initial touch position
+      touchScrollLeft: 0 // Store initial scroll position
+    };
   },
   mounted() {
-    const container = this.$refs.scrollContainer
-    container.addEventListener('wheel', this.handleWheel, { passive: false })
+    const container = this.$refs.scrollContainer;
+    // Add wheel event for desktop
+    container.addEventListener('wheel', this.handleWheel, { passive: false });
+    // Add touch events for mobile
+    container.addEventListener('touchstart', this.handleTouchStart, { passive: false });
+    container.addEventListener('touchmove', this.handleTouchMove, { passive: false });
   },
   beforeUnmount() {
-    const container = this.$refs.scrollContainer
+    const container = this.$refs.scrollContainer;
     if (container) {
-      container.removeEventListener('wheel', this.handleWheel)
+      // Remove all event listeners
+      container.removeEventListener('wheel', this.handleWheel);
+      container.removeEventListener('touchstart', this.handleTouchStart);
+      container.removeEventListener('touchmove', this.handleTouchMove);
     }
   },
   methods: {
@@ -107,9 +116,29 @@ export default {
         container.scrollLeft += momentum;
         if (Math.abs(momentum) < 1) clearInterval(interval); // Stop when momentum is small
       }, 20);
+    },
+    handleTouchStart(event) {
+      // Store the initial touch position and scroll position
+      this.touchStartX = event.touches[0].clientX;
+      this.touchScrollLeft = this.$refs.scrollContainer.scrollLeft;
+    },
+    handleTouchMove(event) {
+      event.preventDefault();
+      const touchMoveX = event.touches[0].clientX;
+      const deltaX = this.touchStartX - touchMoveX;
+      this.$refs.scrollContainer.scrollLeft = this.touchScrollLeft + deltaX;
+
+      // Add momentum effect
+      const container = this.$refs.scrollContainer;
+      let momentum = deltaX * 0.5; // Adjust multiplier for momentum strength
+      const interval = setInterval(() => {
+        momentum *= 0.9; // Decay factor
+        container.scrollLeft += momentum;
+        if (Math.abs(momentum) < 1) clearInterval(interval); // Stop when momentum is small
+      }, 20);
     }
   }
-}
+};
 </script>
 
 <style scoped>
