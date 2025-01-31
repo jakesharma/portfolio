@@ -1,5 +1,5 @@
 <template>
-    <div class="pb-5 banner" style="overflow-x: hidden;">
+    <div class=" banner" style="overflow-x: hidden;">
         <div class="row d-flex justify-content-between align-items-center py-0">
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 
                         d-flex justify-content-xl-start justify-content-center 
@@ -28,7 +28,7 @@
                                 </span>
                             </p>
                         </div>
-                        <div class="ps-4">
+                        <div class="ps-4 pb-5">
                             <button class="btn btn-outline-success">
                                 <a href="https://api.whatsapp.com/send?phone=919784344782&text=Hello%20there!"
                                     class=" nav-link" target="_blank">Chat me on Whatsapp
