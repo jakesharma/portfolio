@@ -9,7 +9,7 @@
 
     <div class="projects-container" ref="scrollContainer">
       <div class="project-scroller">
-        <div v-for="(project, index) in projects" :key="index" class="project-card" data-aos="fade-left"
+        <div v-for="(project, index) in projects" :key="index" class="project-card" data-aos="fade-right"
           data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
           <div class="card bg-dark shadow-sm border-0 text-white">
             <a :href="project.link" target="_blank" class="w-inline-block">
@@ -64,15 +64,16 @@ export default {
           image: require('@/assets/image/website-screenshot/codingclass.png') // Use require
         },
         {
-          title: 'ZoomStudio',
-          link: 'https://jakesharma.github.io/ZoomStudio/',
-          image: require('@/assets/image/website-screenshot/ZoomStudio.png') // Use require
-        },
-        {
           title: 'Web.Resume',
           link: 'https://jakesharma.github.io/Web.Resume/',
           image: require('@/assets/image/website-screenshot/Web.Resume.png') // Use require
         },
+        {
+          title: 'ZoomStudio',
+          link: 'https://jakesharma.github.io/ZoomStudio/',
+          image: require('@/assets/image/website-screenshot/ZoomStudio.png') // Use require
+        },
+        
         {
           title: 'Coding-Knowledge',
           link: 'https://jakesharma.github.io/Coding-Knowledge/',
@@ -130,7 +131,7 @@ export default {
 
 .card-img {
   transition: transform 0.5s ease-in-out;
-  /* height: 600px; */
+  /* height: 500px; */
 }
 
 .card:hover .card-img {
@@ -180,7 +181,6 @@ export default {
 
 .scroll-indicator {
   text-align: center;
-  margin-bottom: 20px;
   animation: pulse 2s infinite;
 }
 
