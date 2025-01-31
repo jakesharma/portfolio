@@ -10,32 +10,33 @@
       <div class="project-scroller">
         <div v-for="(project, index) in projects" :key="index" class="project-card" data-aos="fade-up"
           data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-          <div class="card bg-dark shadow-sm border-0 text-white">
+          <div class="card bg-dark shadow-sm border-0 text-white" >
             <a :href="project.link" target="_blank" class="w-inline-block">
-              <img :src="project.image" class="img-fluid p-3" style="border-radius: 20px;" alt="project" loading="lazy">
-            </a>
-            <div class="card-body">
-              <div class="card-2-color px-3 pt-3">
-                <h5 class="card-title">
-                  <a href="#" class="nav-link">
-                    <div class="row">
-                      <div class="col-10 text-start">
-                        <p>{{ project.title }}</p>
+              <img :src="project.image" class="img-fluid card-img" alt="project" loading="lazy">
+
+              <div class="card-body overlay">
+                <div class="card-2-color px-3 pt-3">
+                  <h5 class="card-title">
+                    <a href="#" class="nav-link">
+                      <div class="row">
+                        <div class="col-10 text-start">
+                          <p>{{ project.title }}</p>
+                        </div>
+                        <div class="col-2 text-end">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </div>
                       </div>
-                      <div class="col-2 text-end">
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </div>
+                    </a>
+                  </h5>
+                  <div class="card-text pb-3">
+                    <div class="d-flex">
+                      <p>Developed by:</p>
+                      <p class="ms-2">Jai suthar</p>
                     </div>
-                  </a>
-                </h5>
-                <div class="card-text pb-3">
-                  <div class="d-flex">
-                    <p>Developed by:</p>
-                    <p class="ms-2">Jai suthar</p>
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
