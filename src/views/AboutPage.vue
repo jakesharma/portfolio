@@ -12,8 +12,16 @@
                 <p>Hello, I'm <strong>Jai Kishan Suthar</strong>, a dedicated and passionate web developer with hands-on
                     experience in frontend web development, specializing in HTML, CSS, JavaScript, PHP, and MySQL. With
                     a solid understanding of frameworks like Laravel and basic experience with Livewire, I strive to
-                    create user-friendly and visually appealing digital experiences.
+                    create user-friendly and visually appealing digital experiences. 
                 </p>
+                <p class="personDescription">
+                        I have completed a BCA (Bachelor of Computer Applications) and an MCA (Master of Computer
+                        Applications), and I focus on frontend development and web design. I know how to
+                        build
+                        websites using various frontend tools, and I also have some experience with backend development,
+                        especially with Laravel 11. I enjoy making websites that are easy to use and look great, and I'm
+                        always learning new things.
+                    </p>
             </div>
         </div>
 

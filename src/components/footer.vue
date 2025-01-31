@@ -2,7 +2,7 @@
     <footer class="footer container-fluid py-3 px-3">
         <div class="d-flex justify-content-between align-items-center">
             <div class="my-auto">
-                Made by &hearts; Jai Kishan Suthar.
+                Made by ❤️ Jai Suthar.
             </div>
             <div>
                 <a href="https://github.com/jakesharma" target="_blank" class="text-white">GitHub</a> |

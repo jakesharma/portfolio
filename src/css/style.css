@@ -121,19 +121,14 @@ header .nav-link:hover {
     /* border: 2px solid red; */
 }
 
-
-button .whatsapp-button {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.193) 20%, rgba(53, 187, 73, 0.456) 80%);
-    border-radius: 50px;
-    padding: 0.5rem 1rem;
-    background: rgba(53, 187, 73, 0.456);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    -webkit-backdrop-filter: blur(3.9px);
-    backdrop-filter: blur(3.9px);
-    border: 1px solid rgba(255, 255, 255, 0.51);
+.CodeDesign {
+    line-height: 3rem;
 }
 
+.MyNameInfo {
+    line-height: 3rem;
+    font-size: 4rem;
+}
 
 @media (max-width: 768px) {
     .image-container {
@@ -147,10 +142,16 @@ button .whatsapp-button {
         /* Adjust button position on smaller screens */
     }
 
-    button .whatsapp-button {
-        padding: 0.4rem 0.8rem;
-        /* Adjust button padding for smaller screens */
+    .CodeDesign {
+        padding-top: 0.2rem;
+        line-height: 1.5rem;
     }
+
+    .MyNameInfo {
+        line-height: 2rem;
+        font-size: 3rem;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -160,9 +161,14 @@ button .whatsapp-button {
         /* Even smaller height for very small screens */
     }
 
-    button .whatsapp-button {
-        padding: 0.3rem 0.6rem;
-        /* Adjust button padding further for tiny screens */
+    .CodeDesign {
+        padding-top: 0.2rem;
+        line-height: 1.5rem;
+    }
+
+    .MyNameInfo {
+        line-height: 1rem;
+        font-size: 2rem;
     }
 }
 

@@ -3,7 +3,7 @@
         <div class="ExploreContent text-center">
             <h2>Explore My Portfolio</h2>
             <p class="mb-5">
-                Delve into a collection of my projecs, where creativity meets functionality. Let's get started on your next project
+                Delve into a collection of my project, where creativity meets functionality. Let's get started on your next project
                 together!
             </p>
             <router-link to="/projects" class="nav-link bg-white text-black mx-auto"
@@ -13,7 +13,6 @@
                     View My Portfolio
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
-
             </router-link>
         </div>
     </section>
