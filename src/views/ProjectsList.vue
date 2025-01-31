@@ -45,7 +45,7 @@
 
     <!-- Scroll Indicator -->
     <div class="scroll-indicator d-flex justify-content-center  align-items-center pt-3">
-      <i class="fa-solid fa-arrow-right"></i>
+      <i class="fa-solid fa-arrow-left"></i>
       <span id="ScrollByMouse">Scroll to explore</span>
       <span class="" id="MoveByFinger">Move by Finger</span>
     </div>
@@ -247,7 +247,7 @@ export default {
 /* Responsive design */
 @media (max-width: 768px) {
   .project-card {
-    width: 300px;
+    width: 298px;
   }
 
   #MoveByFinger {
