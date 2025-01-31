@@ -9,7 +9,7 @@
 
     <div class="projects-container" ref="scrollContainer">
       <div class="project-scroller">
-        <div v-for="(project, index) in projects" :key="index" class="project-card" data-aos="fade-up"
+        <div v-for="(project, index) in projects" :key="index" class="project-card" data-aos="fade-left"
           data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
           <div class="card bg-dark shadow-sm border-0 text-white">
             <a :href="project.link" target="_blank" class="w-inline-block">
