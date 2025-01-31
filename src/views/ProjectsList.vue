@@ -6,373 +6,36 @@
       </div>
     </div>
 
-    <div class="row mx-auto 
-    row-cols-1 row-cols-md-3 row-cols-sm-2 g-4 
-    pt-3 
-    project">
-
-      <!-- <div id="carouselId" class="carousel slide row" data-bs-ride="carousel" style="padding: 0rem 5rem;">
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active" style="padding: 5rem">
-
-            <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-              <a href="https://jakesharma.github.io/codingclass/" target="_blank" class="w-inline-block" style="">
-                <div class="card shadow-sm border-0 text-white">
-                  <img src="../assets/image/website-screenshot/codingclass.png" class="img-fluid card-img" alt="project"
-                    loading="lazy">
-                  <div class="card-body overlay">
-                    <div class="card-caption px-3 pt-3">
-                      <h5 class="card-title">
-                        <a href="" class="nav-link">
-                          <div class="row">
-                            <div class="col-12 text-center">
-                              <p class="">CodingClass</p>
-                            </div>
-                          </div>
-                        </a>
-                      </h5>
+    <div class="projects-container" ref="scrollContainer">
+      <div class="project-scroller">
+        <div v-for="(project, index) in projects" :key="index" class="project-card" data-aos="fade-up"
+          data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+          <div class="card bg-dark shadow-sm border-0 text-white">
+            <a :href="project.link" target="_blank" class="w-inline-block">
+              <img :src="project.image" class="img-fluid p-3" style="border-radius: 20px;" alt="project" loading="lazy">
+            </a>
+            <div class="card-body">
+              <div class="card-2-color px-3 pt-3">
+                <h5 class="card-title">
+                  <a href="#" class="nav-link">
+                    <div class="row">
+                      <div class="col-10 text-start">
+                        <p>{{ project.title }}</p>
+                      </div>
+                      <div class="col-2 text-end">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <div class="carousel-item" style="padding: 5rem">
-            <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-              <div class="card shadow-sm border-0 text-white">
-                <a href="https://jakesharma.github.io/ZoomStudio/" target="_blank" class="w-inline-block" style="">
-                  <img src="../assets/image/website-screenshot/ZoomStudio.png" class="img-fluid card-img" alt="project"
-                    loading="lazy">
-                </a>
-                <div class="card-body overlay">
-                  <div class="card-caption px-3 pt-3">
-                    <h5 class="card-title">
-                      <a href="" class="nav-link">
-                        <div class="row">
-                          <div class="col-12 text-center">
-                            <p class="">ZoomStudio</p>
-                          </div>
-                        </div>
-                      </a>
-                    </h5>
+                  </a>
+                </h5>
+                <div class="card-text pb-3">
+                  <div class="d-flex">
+                    <p>Developed by:</p>
+                    <p class="ms-2">Jai suthar</p>
                   </div>
                 </div>
               </div>
             </div>
-
-          </div>
-
-          <div class="carousel-item" style="padding: 5rem">
-            <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-              <div class="card shadow-sm border-0 text-white">
-                <a href="https://jakesharma.github.io/Web.Resume/" target="_blank" class="w-inline-block" style="">
-                  <img src="../assets/image/website-screenshot/Web.Resume.png" class="img-fluid card-img" alt="project"
-                    loading="lazy">
-                </a>
-
-                <div class=" card-body overlay">
-                  <div class="card-caption px-3 pt-3">
-                    <h5 class="card-title">
-                      <a href="" class="nav-link">
-                        <div class="row">
-                          <div class="col-12 text-center">
-                            <p class="">Web.Resume</p>
-                          </div>
-                        </div>
-                      </a>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item" style="padding: 5rem">
-            <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-              <div class="card shadow-sm border-0 text-white">
-                <a href="https://jakesharma.github.io/Coding-Knowledge/" target="_blank" class="w-inline-block"
-                  style="">
-                  <img src="../assets/image/website-screenshot/Coding-Knowledge.png" class="img-fluid card-img"
-                    alt="project" loading="lazy">
-                </a>
-
-                <div class=" card-body overlay">
-                  <div class="card-caption px-3 pt-3">
-                    <h5 class="card-title">
-                      <a href="" class="nav-link">
-                        <div class="row">
-                          <div class="col-12 text-center ">
-                            <p class="">Coding-Knowledge</p>
-                          </div>
-                        </div>
-                      </a>
-                    </h5>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item" style="padding: 5rem">
-            <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-              <div class="card shadow-sm border-0 text-white">
-                <a href="https://jakesharma.github.io/myportfolio/" target="_blank" class="w-inline-block" style="">
-                  <img src="../assets/image/website-screenshot/myportfolio.png" class="img-fluid card-img" alt="project"
-                    loading="lazy">
-                </a>
-
-                <div class=" card-body overlay">
-                  <div class="card-caption px-3 pt-3">
-                    <h5 class="card-title">
-                      <a href="" class="nav-link">
-                        <div class="row">
-                          <div class="col-12 text-center ">
-                            <p class="">MyPortfolio</p>
-                          </div>
-                        </div>
-                      </a>
-                    </h5>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item" style="padding: 5rem">
-            <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-              <div class="card shadow-sm border-0 text-white">
-                <a href="https://jakesharma.github.io/circle/" target="_blank" class="w-inline-block" style="">
-                  <img src="../assets/image/website-screenshot/circle.png" class="img-fluid card-img" alt="project"
-                    loading="lazy">
-                </a>
-
-                <div class=" card-body overlay">
-                  <div class="card-caption px-3 pt-3">
-                    <h5 class="card-title">
-                      <a href="" class="nav-link">
-                        <div class="row">
-                          <div class="col-12 text-center ">
-                            <p class="">Circle</p>
-                          </div>
-                        </div>
-                      </a>
-                    </h5>
-
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div> -->
-
-      <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-        <div class="card shadow-sm border-0 text-white">
-          <a href="https://jakesharma.github.io/codingclass/" target="_blank" class="w-inline-block" style="">
-            <img src="../assets/image/website-screenshot/codingclass.png" class="img-fluid p-3"
-              style="border-radius: 20px;" alt="project" loading="lazy">
-          </a>
-
-          <div class=" card-body ">
-            <div class="card-2-color px-3 pt-3">
-              <h5 class="card-title">
-                <a href="" class="nav-link">
-                  <div class="row">
-                    <div class="col-10 text-start ">
-                      <p class="">CodingClass</p>
-                    </div>
-                    <div class="col-2 text-end">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </a>
-              </h5>
-              <div class="card-text  pb-3 ">
-                <div class="d-flex">
-                  <p>Developed by:</p>
-                  <p class="ms-2">Jai suthar</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-        <div class="card shadow-sm border-0 text-white">
-          <a href="https://jakesharma.github.io/ZoomStudio/" target="_blank" class="w-inline-block" style="">
-            <img src="../assets/image/website-screenshot/ZoomStudio.png" class="img-fluid p-3"
-              style="border-radius: 20px;" alt="project" loading="lazy">
-          </a>
-
-          <div class=" card-body ">
-            <div class="card-2-color px-3 pt-3">
-              <h5 class="card-title">
-                <a href="" class="nav-link">
-                  <div class="row">
-                    <div class="col-10 text-start ">
-                      <p class="">ZoomStudio</p>
-                    </div>
-                    <div class="col-2 text-end">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </a>
-              </h5>
-              <div class="card-text  pb-3 ">
-                <div class="d-flex">
-                  <p>Developed by:</p>
-                  <p class="ms-2">Jai suthar</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-        <div class="card shadow-sm border-0 text-white">
-          <a href="https://jakesharma.github.io/Web.Resume/" target="_blank" class="w-inline-block" style="">
-            <img src="../assets/image/website-screenshot/Web.Resume.png" class="img-fluid p-3"
-              style="border-radius: 20px;" alt="project" loading="lazy">
-          </a>
-
-          <div class=" card-body ">
-            <div class="card-2-color px-3 pt-3">
-              <h5 class="card-title">
-                <a href="" class="nav-link">
-                  <div class="row">
-                    <div class="col-10 text-start ">
-                      <p class="">Web.Resume</p>
-                    </div>
-                    <div class="col-2 text-end">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </a>
-              </h5>
-              <div class="card-text  pb-3 ">
-                <div class="d-flex">
-                  <p>Developed by:</p>
-                  <p class="ms-2">Jai suthar</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-        <div class="card shadow-sm border-0 text-white">
-          <a href="https://jakesharma.github.io/Coding-Knowledge/" target="_blank" class="w-inline-block" style="">
-            <img src="../assets/image/website-screenshot/Coding-Knowledge.png" class="img-fluid p-3"
-              style="border-radius: 20px;" alt="project" loading="lazy">
-          </a>
-
-          <div class=" card-body ">
-            <div class="card-2-color px-3 pt-3">
-              <h5 class="card-title">
-                <a href="" class="nav-link">
-                  <div class="row">
-                    <div class="col-10 text-start ">
-                      <p class="">Coding-Knowledge</p>
-                    </div>
-                    <div class="col-2 text-end">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </a>
-              </h5>
-              <div class="card-text  pb-3 ">
-                <div class="d-flex">
-                  <p>Developed by:</p>
-                  <p class="ms-2">Jai suthar</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-        <div class="card shadow-sm border-0 text-white">
-          <a href="https://jakesharma.github.io/myportfolio/" target="_blank" class="w-inline-block" style="">
-            <img src="../assets/image/website-screenshot/myportfolio.png" class="img-fluid p-3"
-              style="border-radius: 20px;" alt="project" loading="lazy">
-          </a>
-
-          <div class=" card-body ">
-            <div class="card-2-color px-3 pt-3">
-              <h5 class="card-title">
-                <a href="" class="nav-link">
-                  <div class="row">
-                    <div class="col-10 text-start ">
-                      <p class="">myportfolio</p>
-                    </div>
-                    <div class="col-2 text-end">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </a>
-              </h5>
-              <div class="card-text  pb-3 ">
-                <div class="d-flex">
-                  <p>Developed by:</p>
-                  <p class="ms-2">Jai suthar</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-        <div class="card shadow-sm border-0 text-white">
-          <a href="https://jakesharma.github.io/circle/" target="_blank" class="w-inline-block" style="">
-            <img src="../assets/image/website-screenshot/circle.png" class="img-fluid p-3" style="border-radius: 20px;"
-              alt="project" loading="lazy">
-          </a>
-
-          <div class=" card-body ">
-            <div class="card-2-color px-3 pt-3">
-              <h5 class="card-title">
-                <a href="" class="nav-link">
-                  <div class="row">
-                    <div class="col-10 text-start ">
-                      <p class="">Circle</p>
-                    </div>
-                    <div class="col-2 text-end">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </a>
-              </h5>
-              <div class="card-text  pb-3">
-                <div class="d-flex">
-                  <p>Developed by:</p>
-                  <p class="ms-2">Jai suthar</p>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
@@ -382,6 +45,111 @@
 
 <script>
 export default {
-  name: 'ProjectsList'
+  name: 'ProjectsList',
+  data() {
+    return {
+      projects: [
+        {
+          title: 'CodingClass',
+          link: 'https://jakesharma.github.io/codingclass/',
+          image: require('@/assets/image/website-screenshot/codingclass.png') // Use require
+        },
+        {
+          title: 'ZoomStudio',
+          link: 'https://jakesharma.github.io/ZoomStudio/',
+          image: require('@/assets/image/website-screenshot/ZoomStudio.png') // Use require
+        },
+        {
+          title: 'Web.Resume',
+          link: 'https://jakesharma.github.io/Web.Resume/',
+          image: require('@/assets/image/website-screenshot/Web.Resume.png') // Use require
+        },
+        {
+          title: 'Coding-Knowledge',
+          link: 'https://jakesharma.github.io/Coding-Knowledge/',
+          image: require('@/assets/image/website-screenshot/Coding-Knowledge.png') // Use require
+        },
+        {
+          title: 'myportfolio',
+          link: 'https://jakesharma.github.io/myportfolio/',
+          image: require('@/assets/image/website-screenshot/myportfolio.png') // Use require
+        },
+        {
+          title: 'Circle',
+          link: 'https://jakesharma.github.io/circle/',
+          image: require('@/assets/image/website-screenshot/circle.png') // Use require
+        }
+      ]
+    }
+  },
+  mounted() {
+    const container = this.$refs.scrollContainer
+    container.addEventListener('wheel', this.handleWheel, { passive: false })
+  },
+  beforeUnmount() {
+    const container = this.$refs.scrollContainer
+    if (container) {
+      container.removeEventListener('wheel', this.handleWheel)
+    }
+  },
+  methods: {
+    handleWheel(event) {
+      event.preventDefault();
+      const delta = Math.sign(event.deltaY) * 200; // Increased scroll speed
+      this.$refs.scrollContainer.scrollLeft += delta;
+
+      // Add momentum effect
+      const container = this.$refs.scrollContainer;
+      let momentum = delta;
+      const interval = setInterval(() => {
+        momentum *= 0.9; // Decay factor
+        container.scrollLeft += momentum;
+        if (Math.abs(momentum) < 1) clearInterval(interval); // Stop when momentum is small
+      }, 20);
+    }
+  }
 }
 </script>
+
+<style scoped>
+.projects-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.projects-container::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.project-scroller {
+  display: inline-flex;
+  gap: 1.5rem;
+}
+
+.project-card {
+  display: inline-block;
+  width: 350px;
+  vertical-align: top;
+  white-space: normal;
+  transition: transform 0.3s ease;
+}
+
+/* Optional: Add some hover effect */
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .project-card {
+    width: 300px;
+  }
+}
+</style>
