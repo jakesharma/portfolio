@@ -6,11 +6,12 @@
       </div>
     </div>
 
+
     <div class="projects-container" ref="scrollContainer">
       <div class="project-scroller">
         <div v-for="(project, index) in projects" :key="index" class="project-card" data-aos="fade-up"
           data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-          <div class="card bg-dark shadow-sm border-0 text-white" >
+          <div class="card bg-dark shadow-sm border-0 text-white">
             <a :href="project.link" target="_blank" class="w-inline-block">
               <img :src="project.image" class="img-fluid card-img" alt="project" loading="lazy">
 
@@ -40,6 +41,13 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator d-flex justify-content-center  align-items-center pt-3">
+      <i class="fa-solid fa-arrow-right"></i>
+      <span id="ScrollByMouse">Scroll to explore</span>
+      <span class="" id="MoveByFinger">Move by Finger</span>
     </div>
   </div>
 </template>
@@ -113,6 +121,93 @@ export default {
 </script>
 
 <style scoped>
+.card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* left: -3rem; */
+}
+
+.card-img {
+  transition: transform 0.5s ease-in-out;
+  /* height: 600px; */
+}
+
+.card:hover .card-img {
+  transform: scale(1.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scale: 1rem;
+  background: rgba(0, 0, 0, 0.563);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card-caption {
+  /* background: rgba(0, 0, 0, 0.7); */
+  /* padding: 20px; */
+  /* border-radius: 10px; */
+  width: 100%;
+}
+
+.card-title a {
+  color: white;
+  text-decoration: none;
+}
+
+.card-text p {
+  margin: 0;
+}
+
+
+.scroll-indicator {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+
+.scroll-indicator i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+#ScrollByMouse{
+  display: block;
+}
+
+#MoveByFinger {
+  display: none;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+}
+
 .projects-container {
   overflow-x: auto;
   white-space: nowrap;
@@ -147,10 +242,20 @@ export default {
   transform: translateY(-5px);
 }
 
+
+
 /* Responsive design */
 @media (max-width: 768px) {
   .project-card {
     width: 300px;
+  }
+
+  #MoveByFinger {
+    display: block;
+  }
+
+  #ScrollByMouse {
+    display: none;
   }
 }
 </style>
