@@ -231,7 +231,7 @@ export default {
 
 .project-card {
   display: inline-block;
-  width: 350px;
+  width: 400px;
   vertical-align: top;
   white-space: normal;
   transition: transform 0.3s ease;
