@@ -1,6 +1,6 @@
 <template>
-    <div class=" banner" style="overflow-x: hidden;">
-        <div class="row d-flex justify-content-between align-items-center vh-100">
+    <div class=" banner " style="overflow-x: hidden;">
+        <div class="row d-flex justify-content-between align-items-center ">
             <div class="fs-4 d-flex gap-3 banner-SocialAccount" style="">
                 <!-- Facebook Icon -->
                 <a href="https://www.facebook.com/jaysuthar597" target="_blank" class="p-1">
@@ -19,11 +19,10 @@
             </div>
 
             <div class="fs-6 " style="">
-                <!-- Facebook Icon -->
-                <a href="https://www.facebook.com/jaysuthar597" target="_blank" class="nav-link p-3"
+                <router-link to="/projects" target="_blank" class="nav-link p-3 d-flex align-items-center"
                     style="writing-mode: vertical-lr; position: absolute; z-index: 999; right: 0; bottom: 0;">
-                    View My Projects -->
-                </a>
+                    <p>View My Projects</p><i class="fa fa-arrow-down me-1" style="margin-top: -5%;"></i>
+                </router-link>
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 
                         left-side-info

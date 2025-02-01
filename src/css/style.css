@@ -74,6 +74,9 @@ header .nav-link:hover {
 
 
 /***** banner  *****/
+.banner{
+    height: 100vh;
+}
 .banner-SocialAccount {
     position: absolute;
     left: 0rem;
@@ -195,7 +198,7 @@ header .nav-link:hover {
 
     .left-side-info {
         position: relative;
-        top: 30%;
+        top: 45%;
         left: 0rem !important;
         /* height: 558px; */
         /* width: 30px; */
@@ -220,6 +223,7 @@ header .nav-link:hover {
     .banner {
         position: relative;
         overflow: hidden;
+        height: 600px;
     }
 
     .banner-SocialAccount{
@@ -240,8 +244,8 @@ header .nav-link:hover {
 
     .left-side-info {
         position: relative;
-        top: 20%;
-        left: 0rem !important;
+        top: 30%;
+        left: -2rem !important;
     }
 
     .CodeDesign {
