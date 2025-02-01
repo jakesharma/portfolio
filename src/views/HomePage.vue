@@ -7,23 +7,23 @@
                 data-aos="fade-left" data-aos-duration="1000">
                 <div class="px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-3 left-side-info ">
                     <div class="text-info CodeDesign">
-                        <p class="text-success" style="font-family: cursive; font-style: italic;">&lt;/head&gt;</p>
-                        <p class="text-success" style="font-family: cursive; font-style: italic;">&lt;body&gt;</p>
-                        <p class="text-success ps-4" style="font-family: cursive; font-style: italic;">&lt;h1&gt;</p>
+                        <p class="" style="font-family: cursive; font-style: italic;">&lt;/head&gt;</p>
+                        <p class="" style="font-family: cursive; font-style: italic;">&lt;body&gt;</p>
+                        <p class=" ps-4" style="font-family: cursive; font-style: italic;">&lt;h1&gt;</p>
                         <h1 class="ps-5 text-light MyNameInfo" style="font-family: sans-serif; font-weight:700; ">
                             <p class="">Hi,</p>
                             <p>I'm <span class="text-warning">Jai,</span></p>
                             <p>web developer</p>
                         </h1>
-                        <p class="text-success ps-4" style="font-family: cursive; font-style: italic;">&lt;/h1&gt;</p>
+                        <p class=" ps-4" style="font-family: cursive; font-style: italic;">&lt;/h1&gt;</p>
                         <div class="fs-6 ps-4">
-                            <p><span class="text-success" style="font-family: cursive; font-style: italic;">
+                            <p><span class="" style="font-family: cursive; font-style: italic;">
                                     &lt;p&gt;
                                 </span>
                                 <span class="text-light" style="font-family: sans-serif ;">
                                     Front End developer / Web Design
                                 </span>
-                                <span style="color: green; font-family: cursive; font-style: italic;">
+                                <span style=" font-family: cursive; font-style: italic;">
                                     &lt;/p&gt;
                                 </span>
                             </p>
