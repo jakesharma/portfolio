@@ -1,6 +1,6 @@
 <template>
     <!-- About Section -->
-    <section id="about" class="w-100 p-5 ">
+    <section id="about" class="w-100 p-3 ">
         <div class="row">
             <div class="col-12">
                 <h2 class="w-100 border-2 border-bottom">About Me</h2>

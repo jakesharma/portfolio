@@ -1,5 +1,5 @@
 <template>
-  <div class="w-100 p-5">
+  <div class="w-100 p-3">
     <div class="row">
       <div class="col-12">
         <h2 class="w-100 border-2 border-bottom">My Projects</h2>
@@ -247,7 +247,7 @@ export default {
 /* Responsive design */
 @media (max-width: 768px) {
   .project-card {
-    width: 298px;
+    width: 300px;
   }
 
   #MoveByFinger {
