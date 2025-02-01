@@ -1,5 +1,21 @@
 <template>
     <div class=" banner " style="overflow-x: hidden;">
+        <div class="z-3" style="    position: absolute;
+    bottom: -5%;
+    left: 5%;
+    top: 20%;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(100, 100, 100, 0.500);"></div>
+        <div class="z-3" style="    position: absolute;
+    bottom: -5%;
+    right: 5%;
+    bottom: 20%;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(100, 100, 100, 0.500);"></div>
         <div class="row d-flex justify-content-between align-items-center ">
             <div class="fs-4 d-flex gap-3 banner-SocialAccount" style="">
                 <!-- Facebook Icon -->
@@ -8,7 +24,7 @@
                 </a>
 
                 <!-- Instagram Icon -->
-                <a href="#" class="p-1">
+                <a href="#" class="p-1" target="_blank">
                     <i class="fa-brands fa-instagram "></i>
                 </a>
 
@@ -19,10 +35,10 @@
             </div>
 
             <div class="fs-6 " style="">
-                <router-link to="/projects" target="_blank" class="nav-link p-3 d-flex align-items-center"
+                <a class="nav-link p-3 d-flex align-items-center"
                     style="writing-mode: vertical-lr; position: absolute; z-index: 999; right: 0; bottom: 0;">
-                    <p>View My Projects</p><i class="fa fa-arrow-down me-1" style="margin-top: -5%;"></i>
-                </router-link>
+                    <p>Scroll Down</p><i class="fa fa-arrow-down me-1" style="margin-top: -5%;"></i>
+                </a>
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 
                         left-side-info
@@ -75,6 +91,24 @@
             </div>
         </div>
     </div>
+    <section class="ExploreSection text-center p-5 ">
+        <div class="ExploreContent text-center">
+            <h2>Explore My Portfolio</h2>
+            <p class="mb-5">
+                Delve into a collection of my project, where creativity meets functionality. Let's get started on your
+                next project
+                together!
+            </p>
+            <router-link to="/projects" class="nav-link bg-white text-black mx-auto"
+                style="width: 200px;border-radius: 50px;">
+
+                <div class="d-flex justify-content-between align-items-center text-black px-3 py-2">
+                    View My Portfolio
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </router-link>
+        </div>
+    </section>
 </template>
 
 <script>
