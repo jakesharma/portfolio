@@ -9,14 +9,11 @@
 
     <div class="projects-container" ref="scrollContainer">
       <div class="project-scroller">
-        <div v-for="(project, index) in projects" :key="index" class="project-card" 
-        data-aos="fade-right"
-          data-aos-duration="1000" 
-          data-aos-anchor-placement="center-bottom"
-          >
+        <div v-for="(project, index) in projects" :key="index" class="project-card" data-aos="fade-right"
+          data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
           <div class="card bg-dark shadow-sm border-0 text-white">
             <a :href="project.link" target="_blank" class="w-inline-block">
-              <img :src="project.image" class="img-fluid card-img" alt="project" >
+              <img :src="project.image" class="img-fluid card-img" alt="project">
 
               <div class="card-body overlay">
                 <div class="card-2-color px-3 pt-3">
@@ -53,6 +50,21 @@
       <span class="" id="MoveByFinger">Move by Finger</span>
     </div>
   </div>
+  <section class="ExploreSection text-center p-5 ">
+    <div class="text-center">
+      <h2>Contact us</h2>
+      <p class="mb-5">
+        Have a project in mind or just want to say hello? Fill out the form below, and let's connect!
+      </p>
+      <router-link to="/contact" class="nav-link bg-white text-black mx-auto" style="width: 130px;border-radius: 50px;">
+
+        <div class="d-flex justify-content-between align-items-center text-black px-3 py-2 w-100">
+          Contact
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </router-link>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -76,7 +88,7 @@ export default {
           link: 'https://jakesharma.github.io/ZoomStudio/',
           image: require('@/assets/image/website-screenshot/ZoomStudio.png') // Use require
         },
-        
+
         {
           title: 'Coding-Knowledge',
           link: 'https://jakesharma.github.io/Coding-Knowledge/',
@@ -191,7 +203,8 @@ export default {
   font-size: 24px;
   margin-right: 10px;
 }
-#ScrollByMouse{
+
+#ScrollByMouse {
   display: block;
 }
 
