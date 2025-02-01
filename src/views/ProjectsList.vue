@@ -1,5 +1,5 @@
 <template>
-  <div class="w-100 p-3">
+  <div class="w-100 p-5">
     <div class="row">
       <div class="col-12">
         <h2 class="w-100 border-2 border-bottom">My Projects</h2>
@@ -9,11 +9,14 @@
 
     <div class="projects-container" ref="scrollContainer">
       <div class="project-scroller">
-        <div v-for="(project, index) in projects" :key="index" class="project-card" data-aos="fade-right"
-          data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+        <div v-for="(project, index) in projects" :key="index" class="project-card" 
+        data-aos="fade-right"
+          data-aos-duration="1000" 
+          data-aos-anchor-placement="center-bottom"
+          >
           <div class="card bg-dark shadow-sm border-0 text-white">
             <a :href="project.link" target="_blank" class="w-inline-block">
-              <img :src="project.image" class="img-fluid card-img" alt="project" loading="lazy">
+              <img :src="project.image" class="img-fluid card-img" alt="project" >
 
               <div class="card-body overlay">
                 <div class="card-2-color px-3 pt-3">
@@ -235,7 +238,19 @@ export default {
   vertical-align: top;
   white-space: normal;
   transition: transform 0.3s ease;
+  /* animation: moving 2s ; */
 }
+
+/* @keyframes moving{
+  0%
+   {
+    left: 0%;
+  }
+
+  100% {
+    right: 100%;
+  }
+} */
 
 /* Optional: Add some hover effect */
 .project-card:hover {
@@ -247,7 +262,7 @@ export default {
 /* Responsive design */
 @media (max-width: 768px) {
   .project-card {
-    width: 300px;
+    width: 298px;
   }
 
   #MoveByFinger {
