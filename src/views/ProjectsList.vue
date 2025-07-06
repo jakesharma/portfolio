@@ -98,11 +98,6 @@ export default {
           title: 'myportfolio',
           link: 'https://jakesharma.github.io/myportfolio/',
           image: require('@/assets/image/website-screenshot/myportfolio.png') // Use require
-        },
-        {
-          title: 'Circle',
-          link: 'https://jakesharma.github.io/circle/',
-          image: require('@/assets/image/website-screenshot/circle.png') // Use require
         }
       ]
     }
