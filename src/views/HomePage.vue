@@ -1,7 +1,7 @@
 <template>
     <div class=" banner " style="overflow-x: hidden;">
-        <div class="z-3" style="    position: absolute;
-    bottom: -5%;
+        <div class="z-3" style="position: absolute;
+               bottom: -5%;
     left: 5%;
     top: 20%;
     border-radius: 100%;
@@ -17,20 +17,20 @@
     height: 30px;
     background-color: rgba(100, 100, 100, 0.500);"></div>
         <div class="row d-flex justify-content-between align-items-center ">
-            <div class="fs-4 d-flex gap-3 banner-SocialAccount" style="">
+            <div class="fs-4 d-flex gap-3 banner-SocialAccount">
                 <!-- Facebook Icon -->
                 <a href="https://www.facebook.com/jaysuthar597" target="_blank" class="p-1">
                     <i class="fa-brands fa-facebook-f "></i>
                 </a>
 
                 <!-- Instagram Icon -->
-                <a href="#" class="p-1" target="_blank">
+                <!-- <a href="#" target="_blank" class="p-1" >
                     <i class="fa-brands fa-instagram "></i>
-                </a>
+                </a> -->
 
                 <!-- X (Twitter) Icon -->
-                <a href="https://x.com/Jakeboy978?t=qOJJuN3esk6M0XlZlNQd8A&s=09" target="_blank" class="p-1">
-                    <i class="fa-brands fa-x-twitter "></i>
+                <a href="https://www.linkedin.com/in/jai-suthar/" target="_blank" class="p-1">
+                    <i class="fa-brands fa-linkedin-in"></i>
                 </a>
             </div>
 
@@ -78,7 +78,7 @@
                             </div>
                             <div class="p-0 m-0">
                                 <button class=" btn btn-outline-light">
-                                    <a class="nav-link" href="/public/jai-kishan-suthar-CV.pdf" download="Jai_CV.pdf">
+                                    <a class="nav-link" href="/jai-kishan-suthar-CV.pdf" rel="noopener">
                                         Download My CV
                                     </a>
                                 </button>
@@ -125,3 +125,4 @@ export default {
     name: 'HomePage'
 }
 </script>
+

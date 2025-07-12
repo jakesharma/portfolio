@@ -30,8 +30,8 @@
                                 </a> -->
 
                                 <!-- X (Twitter) Icon -->
-                                <a href="https://x.com/Jakeboy978?t=qOJJuN3esk6M0XlZlNQd8A&s=09" target="_blank" class="me-2">
-                                    <i class="fa-brands fa-x-twitter text-white"
+                                <a href="https://www.linkedin.com/in/jai-suthar/" target="_blank" class="me-2">
+                                    <i class="fa-brands fa-linkedin-in text-white"
                                         style="width: 50px; height: 50px; text-align: center;"></i>
                                 </a>
                             </div>
