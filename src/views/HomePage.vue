@@ -78,7 +78,7 @@
                             </div>
                             <div class="p-0 m-0">
                                 <button class=" btn btn-outline-light">
-                                    <a class="nav-link" href="/public/jai-kishan-suthar-CV.pdf" rel="noopener">
+                                    <a class="nav-link" href="/public/jai-kishan-suthar-CV.pdf" download="Jai_CV.pdf">
                                         Download My CV
                                     </a>
                                 </button>
