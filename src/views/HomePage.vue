@@ -68,12 +68,21 @@
                                 </span>
                             </p>
                         </div>
-                        <div class="ps-4 pb-5">
-                            <button class="btn btn-outline-success">
-                                <a href="https://api.whatsapp.com/send?phone=919784344782&text=Hello%20there!"
-                                    class=" nav-link" target="_blank">Chat me on Whatsapp
-                                </a>
-                            </button>
+                        <div class="ps-4 pb-5 d-flex gap-2">
+                            <div class="p-0 m-0">
+                                <button class=" btn btn-outline-success" style="width: auto;">
+                                    <a href="https://api.whatsapp.com/send?phone=919784344782&text=Hello%20there!"
+                                        class=" nav-link" target="_blank">Chat me on Whatsapp
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="p-0 m-0">
+                                <button class=" btn btn-outline-light">
+                                    <a class="nav-link" href="/public/jai-kishan-suthar-CV.pdf" rel="noopener">
+                                        Download My CV
+                                    </a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
