@@ -80,7 +80,7 @@
                                 <button class=" btn btn-outline-light">
                                     <a class="nav-link" 
  
-                                    href="/public/jai-kishan-suthar-CV.pdf" 
+                                    href="https://drive.google.com/file/d/1pi8nxH6WlFz7MfF4q2BPNZznt9sU8NwB/view" 
                                     target="_blank" rel="noopener">
                                         Download My CV
                                     </a>
